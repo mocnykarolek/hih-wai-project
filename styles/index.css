@@ -8,7 +8,7 @@
 body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(to top right, #fec38e, #9a2f00);
+  background: linear-gradient(90deg, #fec38e, #9a2f00);
 }
 a {
   color: inherit;
@@ -109,8 +109,23 @@ main {
 
 
 .logo img {
-    width: 5vw;
-    height: 5vw;
+    width: 50px;
+    height: 50px;
+}
+
+.logo h3 {
+    font-size: 20px;
+
+}
+
+#nigga2{
+    width: 100vw;
+    filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+#nigga2:hover {
+    filter: blur(3px);
 }
 
 .strokeme {
@@ -140,4 +155,12 @@ main {
 .button1:hover {
     background-color: #b0b3b5e1;
     scale: 1.1;
+}
+
+#footer {
+    display: flex;
+    margin-top: 300px;
+    padding-bottom: 100px;
+    align-items: flex-end;
+    justify-content: center;
 }
