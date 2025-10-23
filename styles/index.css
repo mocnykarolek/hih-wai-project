@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to top right,#FEC38E, #9A2F00 );
+}
+html {
+    height: 100%;
+    color: white;
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1,h2,h3, p {
+    font-family: 'poppins', sans-serif;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
