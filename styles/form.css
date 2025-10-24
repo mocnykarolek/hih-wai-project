@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(90deg, #fec38e, #9a2f00);
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button {
+  font-family: "poppins", sans-serif;
+}
+
+#logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.1vw;
+  color: rgb(214, 161, 61);
+  text-decoration: none;
+}
