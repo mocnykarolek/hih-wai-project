@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,7 +11,7 @@
 body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(90deg, #ECF4E8, #CBF3BB);
+  background: linear-gradient(90deg, #ecf4e8, #cbf3bb);
 }
 a {
   color: inherit;
@@ -25,13 +29,12 @@ h3,
 p,
 a,
 button {
-  color: #93BFC7;
+  color: #93bfc7;
   font-family: "poppins", sans-serif;
 }
 
 html {
   height: 100%;
-  
 }
 
 main {
@@ -39,8 +42,7 @@ main {
   justify-content: center;
 }
 
-
-.nigga {
+.header_class {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -75,7 +77,6 @@ main {
   display: flex;
   align-items: center;
   gap: 0.1vw;
-
 }
 
 .logo:hover {
@@ -88,18 +89,6 @@ main {
 .logo img {
   width: 150px;
   height: 150px;
-}
-
-
-
-#nigga2 {
-  width: 100vw;
-  filter: blur(10px);
-  transition: all 0.5s ease;
-}
-
-#nigga2:hover {
-  filter: blur(3px);
 }
 
 .strokeme {
@@ -132,7 +121,7 @@ main {
 
 #footer {
   display: flex;
-  margin-top: 300px;
+  margin-top: 200px;
   padding-bottom: 100px;
   align-items: flex-end;
   justify-content: center;
@@ -159,7 +148,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('../images/spaghetti-6639970_1920.jpg') center/cover no-repeat;
+  background: url("../images/spaghetti-6639970_1920.jpg") center/cover no-repeat;
   filter: blur(5px);
   transition: filter 0.5s ease;
   z-index: 0;
@@ -186,4 +175,35 @@ main {
 #main-button:hover {
   background-color: #b0b3b53d;
   scale: 1.1;
+}
+
+.main-tex {
+  background: linear-gradient(90deg, #abe7b2, #abe7b2);
+  border: none;
+  border-radius: 30px;
+  margin: 25px 15%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.back-to-top {
+  font-size: 1.2vw;
+}
+
+.first-section {
+  margin-top: 100px;
+}
+
+#main_div {
+  display: flex;
+  flex-direction: column;
 }
