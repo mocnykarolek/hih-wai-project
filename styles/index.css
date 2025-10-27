@@ -7,7 +7,7 @@
 body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(90deg, #fec38e, #9a2f00);
+  background: linear-gradient(90deg, #ECF4E8, #CBF3BB);
 }
 a {
   color: inherit;
@@ -25,12 +25,13 @@ h3,
 p,
 a,
 button {
+  color: #93BFC7;
   font-family: "poppins", sans-serif;
 }
 
 html {
   height: 100%;
-  color: white;
+  
 }
 
 main {
@@ -38,20 +39,6 @@ main {
   justify-content: center;
 }
 
-/* .nav-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 5vw;
-} */
 
 .nigga {
   display: flex;
@@ -88,7 +75,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0.1vw;
-  color: rgb(214, 161, 61);
+
 }
 
 .logo:hover {
@@ -99,13 +86,11 @@ main {
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
 
-.logo h3 {
-  font-size: 20px;
-}
+
 
 #nigga2 {
   width: 100vw;
@@ -125,13 +110,15 @@ main {
 .nav-links li a {
   font-size: 1.2vw;
   font-weight: 500;
-  color: white;
+
   transition: 0.5s all ease;
 }
 
 .button1 {
   padding: 9px 25px;
-  background-color: #d1d3d4;
+  background-color: #e8ebeb;
+  font-weight: 700;
+  font-size: large;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -154,4 +141,49 @@ main {
 main {
   display: flex;
   flex-direction: column;
+}
+
+.main-photo {
+  position: relative;
+  transition: all 0.5s ease;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tło z blur'em — nie rozmywa potomków */
+.main-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../images/spaghetti-6639970_1920.jpg') center/cover no-repeat;
+  filter: blur(5px);
+  transition: filter 0.5s ease;
+  z-index: 0;
+}
+
+.main-photo:hover::before {
+  filter: blur(3px);
+}
+
+#main-button {
+  position: absolute;
+  z-index: 1; /* nad tłem */
+  padding: 15px 40px;
+  font-size: 1.5vw;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #e8ebeb62;
+  transition: all 0.3s ease 0s;
+  filter: none; /* upewnij się, że przycisk nie ma blur */
+}
+
+#main-button:hover {
+  background-color: #b0b3b53d;
+  scale: 1.1;
 }
