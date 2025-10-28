@@ -1,42 +1,85 @@
 <!DOCTYPE html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Contact</title>
+    <title>Kuchnia Karola</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/nav-bar.css" />
-    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="nigga">
-      <div class="logo">
-        <a id="logo-link" href="index.html">
-          <img
-            src="images/favicon.png"
-            alt="Logo"
-            width="100px"
-            height="100px"
-          />
-
-          <h3 class="strokeme">Moje Piwo</h3>
-        </a>
-      </div>
+    <header class="header_class">
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" width="500px" height="500px" />
+        </div>
+      </a>
 
       <nav class="nav-bar">
         <ul class="nav-links">
-          <li><a href="#">Strona Główna</a></li>
-          <li><a href="#">Kategorie</a></li>
-          <li><a href="#">Nowości</a></li>
+          <li><a href="#">Przepisy</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">O mnie</a></li>
         </ul>
       </nav>
 
       <a href="form.html"><button class="button1">Kontakt</button></a>
     </header>
-    <main></main>
 
-    <script src="" async defer></script>
+    <main>
+      <section class="form_box">
+        <h2>Skontaktuj sie ze mna</h2>
+        <form action="">
+          <label for="">Twoje imie</label>
+          <input type="text" /> <br />
+          <label for="">Twój email</label>
+          <input type="email" /> <br />
+          <label for="">Numer telefonu</label>
+          <input type="tel" /> <br />
+          <label for="">Twoja wiadomość</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea> <br />
+          <label for="">Preferencje kontaktu</label>
+          <select name="" id="">
+            <option value="">Email</option>
+            <option value="">Telefon</option>
+          </select>
+          <br />
+          <input type="checkbox" />
+          <p>
+            Tak, chcę otrzymywać powiadomienia na adres email / numer telefonu
+          </p>
+          <br />
+          <input type="radio" name="" id="" />
+          <label for="">Mężczyzna</label>
+          <input type="radio" name="" id="" />
+          <label for="">Kobieta</label>
+
+          <br />
+          <button type="submit">Wyślij</button>
+        </form>
+      </section>
+      <section class="back_top_sec">
+        <a class="back-to-top" href="#top">Powrót</a>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>© 2025 Kuchnia Karola. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
