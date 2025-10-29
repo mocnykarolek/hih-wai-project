@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  font-family: "poppins", sans-serif;
 }
 
 * {
@@ -208,73 +207,3 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-.form_box {
-  background: linear-gradient(45deg, #ffffff, #ece7e7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  max-width: 50%;
-  margin: 0 auto;
-  border: none;
-  border-radius: 30px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
-  max-width: 50%;
-}
-
-.flex-element {
-  display: flex;
-  justify-content: center;
-  
-}
-
-.flex-element form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-left: 20px;
-}
-
-input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  font-size: 1vw;
-}
-
-textarea {
-  
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 1vw;
-
-}
-
-form button {
-  padding: 10px;
-  border:none;
-  
-  border-radius: 20px;
-  font-size: large;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-form button:hover {
-  background-color: #b0b3b53d;
-  transform: scale(1.04);
-}
-
-select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  font-size: 1vw;
-}
-option {
-  border: none;
-
-}
-
