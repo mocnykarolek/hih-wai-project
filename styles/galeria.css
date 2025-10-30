@@ -52,6 +52,7 @@ main {
 }
 
 .nav-links {
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -66,6 +67,7 @@ main {
   cursor: pointer;
 }
 .nav-links li {
+  width: 100%;
   transition: all 0.3s ease 0s;
 }
 
@@ -99,7 +101,7 @@ main {
 .nav-links li a {
   font-size: 1.2vw;
   font-weight: 500;
-
+  white-space: nowrap;
   transition: 0.5s all ease;
 }
 
@@ -234,4 +236,53 @@ main {
 .gallery img:hover {
   transform: scale(1.05);
   
+}
+
+footer p {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px)
+{
+  .back-to-top {
+    font-size:30px;
+  }
+  #main-button{
+    font-size: 20px;
+  }
+
+  .header_class{
+    justify-content: center;
+  }
+
+  /* zmienione/rozszerzone style dla nav na małych ekranach */
+  .nav-links {
+    width: 100%;
+    flex-direction: column; /* ustaw kolumnowo, łatwiej kliknąć */
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links li {
+    flex: none; /* nie rozciągaj elementów w kolumnie */
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    
+    font-size: 1.25rem; /* powiększona czcionka */
+    padding: 0.75rem 1rem; /* większa powierzchnia klikalna */
+    
+  }
+  #footer {
+    width: 100vw;
+  }
+
+  .gallery img {
+    width: 70vw;        
+    height: 70vw;
+  }
+
 }

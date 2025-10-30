@@ -278,3 +278,61 @@ option {
 
 }
 
+footer p {
+  margin-right: 10px;
+}
+
+.reset_button {
+  border: none;
+  color: #93bfc7;
+  transition: ease 0.3s;
+
+}
+
+.reset_button:hover{
+  background-color: #b0b3b53d;
+  scale: 1.04;
+}
+@media screen and (max-width: 600px)
+{
+  .back-to-top {
+    font-size:30px;
+  }
+  #main-button{
+    font-size: 20px;
+  }
+
+  .header_class{
+    justify-content: center;
+  }
+
+  /* zmienione/rozszerzone style dla nav na małych ekranach */
+  .nav-links {
+    width: 100%;
+    flex-direction: column; /* ustaw kolumnowo, łatwiej kliknąć */
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links li {
+    flex: none; /* nie rozciągaj elementów w kolumnie */
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    
+    font-size: 1.25rem; /* powiększona czcionka */
+    padding: 0.75rem 1rem; /* większa powierzchnia klikalna */
+    
+  }
+  #footer {
+    width: 100vw;
+  }
+
+  .form_box {
+    max-width: 90%;
+    min-width: 70%;
+  }
+}

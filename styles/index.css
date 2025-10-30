@@ -46,9 +46,15 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   padding: 30px 10%;
+}
+
+.nav-bar {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 2rem;
 }
 
 .nav-links {
@@ -57,7 +63,8 @@ main {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 5vw;
+  gap: 5px;
+  width: 100%;
 }
 
 .nav-links li a:hover {
@@ -66,12 +73,21 @@ main {
   cursor: pointer;
 }
 .nav-links li {
+  flex:1;
+  text-align: center;
+  
   transition: all 0.3s ease 0s;
 }
+.nav-links a {
+  font-size: 1.2rem;
+  white-space: wrap;
+  padding: 0.5rem;
+  }
 
 .nav-links li:hover {
   scale: 1.1;
 }
+
 
 .logo {
   display: flex;
@@ -206,4 +222,69 @@ main {
 #main_div {
   display: flex;
   flex-direction: column;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  animation: slide-in 1s ;
+  z-index: 1;
+}
+
+footer p {
+  margin-right: 10px;
+}
+
+h2::before {
+  content: "★  ";
+  color: rgb(218, 255, 238);
+}
+@media screen and (max-width: 600px)
+{
+  .back-to-top {
+    font-size:30px;
+  }
+  #main-button{
+    font-size: 20px;
+  }
+
+  .header_class{
+    justify-content: center;
+  }
+
+  /* zmienione/rozszerzone style dla nav na małych ekranach */
+  .nav-links {
+    width: 100%;
+    flex-direction: column; /* ustaw kolumnowo, łatwiej kliknąć */
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links li {
+    flex: none; /* nie rozciągaj elementów w kolumnie */
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    
+    font-size: 1.25rem; /* powiększona czcionka */
+    padding: 0.75rem 1rem; /* większa powierzchnia klikalna */
+    
+  }
+  #footer {
+    width: 100vw;
+  }
+
 }
