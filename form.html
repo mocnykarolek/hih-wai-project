@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -44,20 +41,19 @@
         <section class="flex-element">
           <h2>Skontaktuj się ze mną</h2>
           <form action="#" method="post">
-            <!-- DODAŁEM id="name" i name="name" → label for="name" musi mieć dopasowane id -->
+            
             <label for="name">Twoje imię</label>
             <input type="text" id="name" name="name" required />
 
-            <!-- DODAŁEM id="email" i name="email" → label for="email" musi wskazywać na istniejący input -->
+            
             <label for="email">Twój email</label>
             <input type="email" id="email" name="email" />
 
-            <!-- POPRAWIŁEM literówkę "phon" → "phone"; DODAŁEM id i name -->
+            
             <label for="phone">Numer telefonu</label>
             <input type="tel" id="phone" name="phone" />
 
-            <!-- USUNĄŁEM błędny atrybut "for" z textarea (nie istnieje w tym tagu)
-       DODAŁEM poprawne id="message" i name="message" -->
+            
             <label for="message">Twoja wiadomość</label>
             <textarea
               id="message"
@@ -66,15 +62,14 @@
               rows="10"
             ></textarea>
 
-            <!-- POPRAWIŁEM literówkę "perferences" → "preferences"
-       DODAŁEM zgodne id i name oraz poprawne value w opcjach -->
+            
             <label for="preferences">Preferencje kontaktu</label>
             <select name="preferences" id="preferences">
               <option value="email">Email</option>
               <option value="phone">Telefon</option>
             </select>
 
-            <!-- DODAŁEM id i for do checkboxa + zmieniłem <p> na <label> (bardziej semantycznie) -->
+            
             <div>
               <input type="checkbox" id="consent" name="consent" />
               <label for="consent">
@@ -83,20 +78,19 @@
               </label>
             </div>
 
-            <!-- ZMIENIŁEM name="1" → name="gender" (grupuje przyciski radio)
-       DODAŁEM id="mezczyzna" i powiązałem z label -->
+            
             <div>
               <input type="radio" name="gender" id="mezczyzna" value="M" />
               <label for="mezczyzna">Mężczyzna</label>
             </div>
 
-            <!-- DODAŁEM id="kobieta", value="K", oraz użyłem tego samego name="gender" -->
+            
             <div>
               <input type="radio" name="gender" id="kobieta" value="K" />
               <label for="kobieta">Kobieta</label>
             </div>
 
-            <!-- DODAŁEM atrybut value="" dla reset, bo to dobra praktyka -->
+            
             <button type="submit">Wyślij</button>
             <input class="reset_button" type="reset" value="Wyczyść" />
           </form>

@@ -144,7 +144,7 @@ main {
   align-items: center;
 }
 
-/* tło z blur'em — nie rozmywa potomków */
+
 .main-photo::before {
   content: "";
   position: absolute;
@@ -161,7 +161,7 @@ main {
 
 #main-button {
   position: absolute;
-  z-index: 1; /* nad tłem */
+  z-index: 1; 
   padding: 15px 40px;
   font-size: 1.5vw;
   font-weight: 700;
@@ -170,7 +170,7 @@ main {
   cursor: pointer;
   background-color: #e8ebeb62;
   transition: all 0.3s ease 0s;
-  filter: none; /* upewnij się, że przycisk nie ma blur */
+  filter: none; 
 }
 
 #main-button:hover {
@@ -249,25 +249,25 @@ footer p {
     justify-content: center;
   }
 
-  /* zmienione/rozszerzone style dla nav na małych ekranach */
+  
   .nav-links {
     width: 100%;
-    flex-direction: column; /* ustaw kolumnowo, łatwiej kliknąć */
+    flex-direction: column; 
     gap: 0.5rem;
     align-items: center;
     padding: 0.5rem;
   }
 
   .nav-links li {
-    flex: none; /* nie rozciągaj elementów w kolumnie */
+    flex: none; 
     width: 100%;
     text-align: center;
   }
 
   .nav-links li a {
     
-    font-size: 1.25rem; /* powiększona czcionka */
-    padding: 0.75rem 1rem; /* większa powierzchnia klikalna */
+    font-size: 1.25rem; 
+    padding: 0.75rem 1rem; 
     
   }
  td{
