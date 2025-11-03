@@ -221,7 +221,7 @@ footer p {
 
 .dropdown_content{
   display: none;
-  transition: all 0.3 ease 0s;
+  
 }
 
 .dropdown:hover .dropdown_content{
