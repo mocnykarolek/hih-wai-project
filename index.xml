@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moj_hobby xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hobby.xsd">
+  <autor>
+    <imie>Karol</imie>
+    <pasja>Gotowanie</pasja>
+  </autor>
+
+  <strona tytul="Kuchnia Karola" temat="gotowanie">
+    <opis>Moja strona internetowa o gotowaniu. Dzielę się ulubionymi przepisami i zdjęciami potraw.</opis>
+
+    <przepisy>
+      <przepis nazwa="Spaghetti Bolognese" kategoria="obiad" czas="45 min">
+        <skladniki>
+          <skladnik>Makaron spaghetti</skladnik>
+          <skladnik>Mięso mielone</skladnik>
+          <skladnik>Sos pomidorowy</skladnik>
+        </skladniki>
+      </przepis>
+
+      <przepis nazwa="Kurczak curry" kategoria="obiad" czas="35 min">
+        <skladniki>
+          <skladnik>Kurczak</skladnik>
+          <skladnik>Mleczko kokosowe</skladnik>
+          <skladnik>Przyprawa curry</skladnik>
+        </skladniki>
+      </przepis>
+
+      <przepis nazwa="Tiramisu" kategoria="deser" czas="30 min">
+        <skladniki>
+          <skladnik>Mascarpone</skladnik>
+          <skladnik>Biszkopty</skladnik>
+          <skladnik>Kawa</skladnik>
+        </skladniki>
+      </przepis>
+    </przepisy>
+
+    <galeria>
+      <zdjecie src="images/spaghetti.jpg" opis="Spaghetti Bolognese"/>
+      <zdjecie src="images/curry.jpg" opis="Kurczak curry"/>
+      <zdjecie src="images/tiramisu.jpg" opis="Tiramisu"/>
+    </galeria>
+
+    <linki>
+      <link url="https://www.kwestiasmaku.com/przepis/spaghetti-bolognese">Przepis Spaghetti</link>
+      <link url="https://www.kwestiasmaku.com/przepis/kurczak-w-sosie-curry">Przepis Curry</link>
+      <link url="https://www.kwestiasmaku.com/kuchnia_wloska/tiramisu/tiramisu.html">Przepis Tiramisu</link>
+    </linki>
+  </strona>
+</moj_hobby>
