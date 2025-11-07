@@ -121,7 +121,7 @@
 
     <xs:complexType name="galeriaType">
         <xs:sequence>
-            <xs:element name="zdjecie">
+            <xs:element name="zdjecie" maxOccurs="3">
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
@@ -131,28 +131,7 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="zdjecie">
-                <xs:complexType>
-                    <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute name="src" type="xs:anyURI" use="required" />
-                            <xs:attribute name="opis" type="shortType" use="required" />
-                        </xs:extension>
-                    </xs:simpleContent>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="zdjecie">
-                <xs:complexType>
-
-                    <xs:simpleContent>
-
-                        <xs:extension base="xs:string">
-                            <xs:attribute name="src" type="xs:anyURI" use="required" />
-                            <xs:attribute name="opis" type="shortType" use="required" />
-                        </xs:extension>
-                    </xs:simpleContent>
-                </xs:complexType>
-            </xs:element>
+            
         </xs:sequence>
     </xs:complexType>
 
@@ -184,7 +163,7 @@
             <xs:element name="pasja">
                 <xs:simpleType>
                     <xs:restriction base="longType">
-
+                        <xs:pattern value="[A-ZŁŚŻĆ][a-ząćęłńóśżź]{2,40}"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -205,7 +184,7 @@
 
     <xs:complexType name="linkiType">
         <xs:sequence>
-            <xs:element name="link">
+            <xs:element name="link" maxOccurs="3">
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
@@ -215,26 +194,7 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="link">
-                <xs:complexType>
-                    <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute name="url" type="xs:anyURI" use="required" />
-
-                        </xs:extension>
-                    </xs:simpleContent>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="link">
-                <xs:complexType>
-                    <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute name="url" type="xs:anyURI" use="required" />
-
-                        </xs:extension>
-                    </xs:simpleContent>
-                </xs:complexType>
-            </xs:element>
+            
         </xs:sequence>
     </xs:complexType>
 
