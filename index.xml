@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<moj_hobby xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hobby.xsd">
+<hipertext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hobby.xsd">
   <autor>
     <imie>Karol</imie>
+    <nazwisko>Oledzki</nazwisko>
     <pasja>Gotowanie</pasja>
+    <kontakt typ="email" widoczny="tak">karol@example.com</kontakt>
+
   </autor>
 
   <strona tytul="Kuchnia Karola" temat="gotowanie">
     <opis>Moja strona internetowa o gotowaniu. Dzielę się ulubionymi przepisami i zdjęciami potraw.</opis>
 
     <przepisy>
-      <przepis nazwa="Spaghetti Bolognese" kategoria="obiad" czas="45 min">
+      <przepis nazwa="Spaghetti Bolognese" kategoria="obiad" czas="45 min" kalorie="500" czyZdrowe="true">
         <skladniki>
           <skladnik>Makaron spaghetti</skladnik>
           <skladnik>Mięso mielone</skladnik>
@@ -17,7 +20,7 @@
         </skladniki>
       </przepis>
 
-      <przepis nazwa="Kurczak curry" kategoria="obiad" czas="35 min">
+      <przepis nazwa="Kurczak curry" kategoria="obiad" czas="35 min" kalorie="435" czyZdrowe="true">
         <skladniki>
           <skladnik>Kurczak</skladnik>
           <skladnik>Mleczko kokosowe</skladnik>
@@ -25,7 +28,7 @@
         </skladniki>
       </przepis>
 
-      <przepis nazwa="Tiramisu" kategoria="deser" czas="30 min">
+      <przepis nazwa="Tiramisu" kategoria="deser" czas="30 min" kalorie="332" czyZdrowe="false">
         <skladniki>
           <skladnik>Mascarpone</skladnik>
           <skladnik>Biszkopty</skladnik>
@@ -35,9 +38,9 @@
     </przepisy>
 
     <galeria>
-      <zdjecie src="images/spaghetti.jpg" opis="Spaghetti Bolognese"/>
-      <zdjecie src="images/curry.jpg" opis="Kurczak curry"/>
-      <zdjecie src="images/tiramisu.jpg" opis="Tiramisu"/>
+      <zdjecie src="images/0.jpg" opis="Spaghetti Bolognese"/>
+      <zdjecie src="images/6.jpg" opis="spaghetti cacio e pepe"/>
+      <zdjecie src="images/7.jpg" opis="rigatoni pesto"/>
     </galeria>
 
     <linki>
@@ -46,4 +49,4 @@
       <link url="https://www.kwestiasmaku.com/kuchnia_wloska/tiramisu/tiramisu.html">Przepis Tiramisu</link>
     </linki>
   </strona>
-</moj_hobby>
+</hipertext>

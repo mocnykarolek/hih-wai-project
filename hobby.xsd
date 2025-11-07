@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+    <xs:element name="hipertext" type="hipertextType" />
+    <xs:element name="autor" type="autorType"/>
+    <xs:element name="strona" type="stronaType"></xs:element>
+    <xs:element name="linki" type="linkiType"></xs:element>
+    <xs:element name="galeria" type="galeriaType"></xs:element>
+    <xs:element name="przepisy" type="przepisyType"></xs:element>
+    <xs:attribute name="typ" type="typType"/>
+
+    <xs:simpleType name="opisType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="15"></xs:minLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="skladnikType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"></xs:minLength>
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="shortType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"></xs:minLength>
+            <xs:maxLength value="30"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="longType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"></xs:minLength>
+            <xs:maxLength value="70"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kategoriaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="śniadanie"></xs:enumeration>
+            <xs:enumeration value="obiad"></xs:enumeration>
+            <xs:enumeration value="kolacja"></xs:enumeration>
+            <xs:enumeration value="deser"></xs:enumeration>
+
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="czasPrzygotowaniaType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-59]\s min"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="email"></xs:enumeration>
+            <xs:enumeration value="telefon"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="przepisyType">
+
+        <xs:sequence>
+            <xs:element name="przepis">
+                <xs:complexType>
+
+                    <xs:attribute name="nazwa" type="longType"></xs:attribute>
+
+                    <xs:attribute name="kategoria" type="kategoriaType"></xs:attribute>
+                    <xs:attribute name="czas" type="czasPrzygotowaniaType"></xs:attribute>
+                    <xs:attribute name="kalorie">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"></xs:minExclusive>
+                                <xs:maxInclusive value="10000"></xs:maxInclusive>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="czyZdrowe" type="xs:boolean"></xs:attribute>
+
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="przepis">
+                <xs:complexType>
+
+                    <xs:attribute name="nazwa" type="longType"></xs:attribute>
+
+                    <xs:attribute name="kategoria" type="kategoriaType"></xs:attribute>
+                    <xs:attribute name="czasPrzygotowaniaType"></xs:attribute>
+                    <xs:attribute name="kalorie">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"></xs:minExclusive>
+                                <xs:maxInclusive value="10000"></xs:maxInclusive>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="czyZdrowe" type="xs:boolean"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="przepis">
+                <xs:complexType>
+
+                    <xs:attribute name="nazwa" type="longType"></xs:attribute>
+
+                    <xs:attribute name="kategoria" type="kategoriaType"></xs:attribute>
+                    <xs:attribute name="czas" type="czasPrzygotowaniaType"></xs:attribute>
+                    <xs:attribute name="kalorie">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"></xs:minExclusive>
+                                <xs:maxInclusive value="10000"></xs:maxInclusive>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="czyZdrowe" type="xs:boolean"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="galeriaType">
+        <xs:sequence>
+            <xs:element name="zdjecie">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="src" type="xs:anyURI" use="required" />
+                            <xs:attribute name="opis" type="shortType" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="zdjecie">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="src" type="xs:anyURI" use="required" />
+                            <xs:attribute name="opis" type="shortType" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="zdjecie">
+                <xs:complexType>
+
+                    <xs:simpleContent>
+
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="src" type="xs:anyURI" use="required" />
+                            <xs:attribute name="opis" type="shortType" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="stronaType">
+        <xs:sequence>
+            <xs:element name="opis"></xs:element>
+            <xs:element name="przepisy"></xs:element>
+            <xs:element name="galeria"></xs:element>
+            <xs:element ref="linki"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="autorType">
+        <xs:sequence>
+            <xs:element name="imie">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][a-z]{1,30}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="nazwisko">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][a-z]{1,30}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="pasja">
+                <xs:simpleType>
+                    <xs:restriction base="longType">
+
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="kontakt">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="typ" use="required"/>
+                            <xs:attribute name="widoczny"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="linkiType">
+        <xs:sequence>
+            <xs:element name="link">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="url" type="xs:anyURI" use="required" />
+
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="link">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="url" type="xs:anyURI" use="required" />
+
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="link">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="url" type="xs:anyURI" use="required" />
+
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="hipertextType">
+        <xs:sequence>
+            <xs:element ref="autor"></xs:element>
+            <xs:element name="strona">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="stronaType">
+                            <xs:attribute name="tytul" type="longType" use="required" />
+                            <xs:attribute name="temat" use="required">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"></xs:minLength>
+                                        <xs:maxLength value="15"></xs:maxLength>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
