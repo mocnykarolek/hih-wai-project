@@ -303,3 +303,18 @@ footer p {
   }
 }
 
+
+
+#wyszukaj{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.footer_p {
+  color: #D9CFC7;
+}
