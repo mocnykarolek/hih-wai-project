@@ -318,3 +318,60 @@ footer p {
 .footer_p {
   color: #D9CFC7;
 }
+
+.pop_up {
+
+  background-color: rgba(218, 218, 218, 0.568);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F9F9F9;
+    border: 1px solid #90d93f;
+    color: #222222;
+}
+.pop_up a {
+  font-size: 30px;
+  color: rgb(49, 49, 49);
+
+}
+
+.pop_up button {
+
+  border: none;
+}
+
+.pop_up {
+  background-color: #F9F9F9;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #90d93f;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.pop_up a {
+  font-size: 24px;
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.pop_up a:hover {
+  color: #90d93f;
+  scale: 1.2;
+}
+
+
+
+.pop_up p {
+  margin: 0;
+  color: #555555;
+  font-size: 0.95rem;
+}
