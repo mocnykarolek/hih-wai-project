@@ -17,8 +17,9 @@
       rel="stylesheet"
     />
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
   </head>
   <body>
     <header class="header_class">
@@ -41,17 +42,14 @@
 
     <main>
 
-      <div id="test" title="test dialog">
-        <p>baisic dialog popup</p>
-      </div>
 
 
       <section class="form_box">
         <section class="flex-element">
           <h2>Skontaktuj się ze mną</h2>
-          <form action="odbierz.php" method="POST">
+          <form action="odbierz.php" method="POST" id="form_section">
             <label for="name">Twoje imię</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name"/>
 
             <label for="email">Twój email</label>
             <input type="email" id="email" name="email" />
@@ -121,7 +119,7 @@
         </g>
       </svg>
     </footer>
-
     <script src="form.js"></script>
+    
   </body>
 </html>

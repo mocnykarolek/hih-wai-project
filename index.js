@@ -96,6 +96,10 @@ const afterClick = async () => {
   clickCount += 1;
 };
 
+$("#tabela tbody").sortable({
+  axis: "y"
+});
+
 
 
 

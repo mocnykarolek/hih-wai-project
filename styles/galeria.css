@@ -227,11 +227,12 @@ main {
 
 .gallery img {
   width: 500px;        
-  height: 500px;       
+  height: 500px;      
   border-radius: 10px; 
   display: block;
   transition: transform 0.3s ease;
 }
+
 
 .gallery img:hover {
   transform: scale(1.05);
